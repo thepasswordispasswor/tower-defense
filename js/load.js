@@ -22,7 +22,7 @@ function loadImages(s) {
 	ctx.lineTo(27*scale,3*scale);
 	ctx.lineTo(27*scale,27*scale);
 	ctx.lineTo(3*scale,27*scale);
-	ctx.moveTo(1*scale,29*scale);
+	ctx.lineTo(1*scale,29*scale);
 	ctx.lineTo(29*scale,29*scale);
 	ctx.closePath();
 	ctx.fillStyle = "#202020";
