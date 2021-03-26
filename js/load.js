@@ -11,15 +11,10 @@ function loadImages(s) {
 	ctx.lineTo(1*scale,29*scale);
 	ctx.lineTo(3*scale,27*scale);
 	ctx.lineTo(3*scale,3*scale);
+	ctx.lineTo(27*scale,3*scale);
+	ctx.lineTo(29*scale,1*scale);
 	ctx.closePath();
 	ctx.fillStyle = "#505050";
-	ctx.fill();
-	ctx.beginPath();
-	ctx.moveTo(1*scale,1*scale);
-	ctx.lineTo(29*scale,1*scale);
-	ctx.lineTo(27*scale,3*scale);
-	ctx.lineTo(3*scale,3*scale);
-	ctx.closePath();
 	ctx.fill();
 	
 	ctx.beginPath();
