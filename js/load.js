@@ -43,4 +43,4 @@ function loadImages(s) {
 	ctx.clearRect(0,0,300,300);
 }
 loadImages(0.3);
-ctx.putImage(images["baseplate"], 150, 150);
+ctx.putImageData(images["baseplate"], 150, 150);
