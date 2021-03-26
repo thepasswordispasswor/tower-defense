@@ -48,7 +48,7 @@ function displayMap() {
 	let m = p.map;
 	for(let i = 0; i < m.height; i++) {
 		for(let o = 0; o < m.width; o++) {
-			ctx.putImageData(images[m[i+""+o]], o*30, i*30);
+			if(m[i+""+o] === "basePlate") ctx.putImageData(images[m[i+""+o]], o*30, i*30);
 		}
 	}
 }
