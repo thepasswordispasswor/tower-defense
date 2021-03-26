@@ -39,6 +39,8 @@ function loadImages(s) {
 	ctx.closePath();
 	ctx.fill();
 	
-	images.tower = ctx.getImageData(0,0,150*scale,150*scale);
-	ctx.putImageData(images.tower, 150, 150);
+	images["baseplate"] = ctx.getImageData(0,0,150*scale,150*scale);
+	ctx.clearRect(0,0,300,300);
 }
+loadImages(0.3);
+ctx.putImage(images["baseplate"], 150, 150);
