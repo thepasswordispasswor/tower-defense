@@ -21,17 +21,11 @@ function loadImages(s) {
 	ctx.moveTo(29*scale,1*scale);
 	ctx.lineTo(27*scale,3*scale);
 	ctx.lineTo(27*scale,27*scale);
+	ctx.lineTo(3*scale,27*scale);
+	ctx.moveTo(1*scale,29*scale);
 	ctx.lineTo(29*scale,29*scale);
 	ctx.closePath();
 	ctx.fillStyle = "#202020";
-	ctx.fill();
-	
-	ctx.beginPath();
-	ctx.moveTo(1*scale,29*scale);
-	ctx.lineTo(3*scale,27*scale);
-	ctx.lineTo(27*scale,27*scale);
-	ctx.lineTo(29*scale,29*scale);
-	ctx.closePath();
 	ctx.fill();
 	
 	images["baseplate"] = ctx.getImageData(0,0,30*scale,30*scale);
