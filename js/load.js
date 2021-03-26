@@ -33,7 +33,7 @@ function loadImages(s) {
 	ctx.fillStyle = "#202020";
 	ctx.fill();
 	
-	images["baseplate"] = ctx.getImageData(0,0,30*scale,30*scale);
+	images["basePlate"] = ctx.getImageData(0,0,30*scale,30*scale);
 	ctx.clearRect(0,0,300,300);
 }
 loadImages(1);
@@ -48,7 +48,7 @@ function displayMap() {
 	let m = p.map;
 	for(let i = 0; i < m.height; i++) {
 		for(let o = 0; o < m.width; o++) {
-			ctx.putImageData(m[i+""+o], o*30, i*30);
+			ctx.putImageData(images[m[i+""+o]], o*30, i*30);
 		}
 	}
 }
