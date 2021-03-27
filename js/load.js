@@ -37,7 +37,7 @@ function loadImages(s) {
 	ctx.clearRect(0,0,300,300);
 }
 loadImages(1);
-
+/*
 function loadMap(map) {
 	let temp = Object.assign({}, p.map);
 	p.map = map;
@@ -76,7 +76,7 @@ var snakeMap = new Map(9, 9, [
 ]);
 
 loadMap(snakeMap);
-displayMap();
+displayMap();*/
 function test() {
 	putImageData(images["basePlate"], 0, 100);
 }
