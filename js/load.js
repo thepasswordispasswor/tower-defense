@@ -8,8 +8,8 @@ var p = {
 }
 
 function loadImages(s) {
-	ctx.fillStyle = "#383838";
 	let scale = s;
+	ctx.fillStyle = "#383838";
 	ctx.fillRect(0, 0, 30*scale, 30*scale);
 	ctx.beginPath();
 	ctx.moveTo(1*scale,1*scale);
@@ -34,7 +34,7 @@ function loadImages(s) {
 	ctx.fill();
 	
 	images["basePlate"] = ctx.getImageData(0,0,30*scale,30*scale);
-	ctx.clearRect(0,0,300,300);
+	//ctx.clearRect(0,0,300,300);
 }
 loadImages(1);
 /*
