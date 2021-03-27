@@ -53,7 +53,7 @@ function displayMap() {
 	}
 }
 
-/*function Map(width, height, mapInfo) {
+function Map(width, height, mapInfo) {
 	this.width = width;
 	this.height = height;
 	for(let i = 0; i < height; i++) {
@@ -63,7 +63,7 @@ function displayMap() {
 	}
 }
 
-var snakeMap = new Map(9, 9, [
+/*var snakeMap = new Map(9, 9, [
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate",	],
 	["start",	"", 		"", 		"", 		"", 		"", 		"", 		"", 		"basePlate",	],
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"", 		"basePlate",	],
