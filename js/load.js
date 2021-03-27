@@ -38,11 +38,11 @@ function loadImages(s) {
 }
 loadImages(1);
 
-function loadMap(map) {
+/*function loadMap(map) {
 	let temp = Object.assign({}, p.map);
 	p.map = map;
 	return temp;
-}
+}*/
 
 function displayMap() {
 	let m = p.map;
