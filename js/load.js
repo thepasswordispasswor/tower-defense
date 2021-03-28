@@ -38,11 +38,11 @@ function loadImages(s) {
 }
 loadImages(1);
 
-/*function loadMap(map) {
+function loadMap(map) {
 	let temp = Object.assign({}, p.map);
 	p.map = map;
 	return temp;
-}*/
+}
 
 function displayMap() {
 	let m = p.map;
@@ -63,17 +63,17 @@ function Map(width, height, mapInfo) {
 	}
 }
 
-/*var snakeMap = new Map(9, 9, [
-	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate",	],
-	["start",	"", 		"", 		"", 		"", 		"", 		"", 		"", 		"basePlate",	],
-	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"", 		"basePlate",	],
-	["basePlate", 	"", 		"",		"",		"",		"",		"",		"",		"basePlate",	],
-	["basePlate", 	"",		"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	],
-	["basePlate", 	"",		"",		"",		"",		"",		"",		"",		"basePlate",	],
-	["basePlate", 	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"", 		"basePlate",	],
-	["basePlate", 	"", 		"", 		"", 		"", 		"", 		"". 		"",		"end",		],
-	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate",	],
-]);*/
+var snakeMap = new Map(9, 9, [
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
+	["start",	"", 		"", 		"", 		"", 		"", 		"", 		"", 		"basePlate"	],
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"", 		"basePlate"	],
+	["basePlate", 	"", 		"",		"",		"",		"",		"",		"",		"basePlate"	],
+	["basePlate", 	"",		"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate"	],
+	["basePlate", 	"",		"",		"",		"",		"",		"",		"",		"basePlate"	],
+	["basePlate", 	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"", 		"basePlate"	],
+	["basePlate", 	"", 		"", 		"", 		"", 		"", 		"". 		"",		"end"		],
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	]
+]);
 
 //loadMap(snakeMap);
 //displayMap();
