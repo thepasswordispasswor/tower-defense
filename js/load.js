@@ -53,17 +53,17 @@ function displayMap() {
 	}
 }
 
-function Map(width, height, mapInfo) {
-	this.width = width;
-	this.height = height;
-	for(let i = 0; i < height; i++) {
-		for(let o = 0; o < width; o++) {
+function Map(mapInfo) {
+	this["width"] = mapInfo.length;
+	this["height"] = mapInfo[0].length;
+	for(let i = 0; i < this["height"]; i++) {
+		for(let o = 0; o < this["width"]; o++) {
 			this[i+""+o] = mapInfo[i][o];
 		}
 	}
 }
 
-var snakeMap = new Map(9, 9, [
+var snakeMap = new Map([
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
 	["start",	"", 		"", 		"", 		"", 		"", 		"", 		"", 		"basePlate"	],
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"", 		"basePlate"	],
