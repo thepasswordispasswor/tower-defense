@@ -70,5 +70,5 @@ var snakeMap = new Map([
 loadMap(snakeMap);
 displayMap();
 function test() {
-	putImageData(images["basePlate"], 0, 100);
+	ctx.putImageData(images["basePlate"], 0, 100);
 }
