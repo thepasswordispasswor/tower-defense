@@ -65,14 +65,6 @@ function Map(mapInfo) {
 
 var snakeMap = new Map([
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
-	["start",	"", 		"", 		"", 		"", 		"", 		"", 		"", 		"basePlate"	],
-	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"", 		"basePlate"	],
-	["basePlate", 	"", 		"",		"",		"",		"",		"",		"",		"basePlate"	],
-	["basePlate", 	"",		"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate"	],
-	["basePlate", 	"",		"",		"",		"",		"",		"",		"",		"basePlate"	],
-	["basePlate", 	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"basePlate",	"", 		"basePlate"	],
-	["basePlate", 	"", 		"", 		"", 		"", 		"", 		"". 		"",		"end"		],
-	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	]
 ]);
 
 //loadMap(snakeMap);
