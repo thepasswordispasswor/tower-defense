@@ -40,7 +40,7 @@ loadImages(1);
 
 function loadMap(map) {
 	let temp = Object.assign({}, p.map);
-	p.map = map;
+	p.map = Object.assign({}, map);
 	return temp;
 }
 
