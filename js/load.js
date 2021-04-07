@@ -8,28 +8,28 @@ var p = {
 }
 
 function loadImages() {
-	/*ctx.fillStyle = "#383838";
+	/*ctx.fillStyle = "#383842";
 	ctx.fillRect(0, 0, 30, 30);
 	ctx.beginPath();
-	ctx.moveTo(1,1);
-	ctx.lineTo(1,29);
+	ctx.moveTo(0,0);
+	ctx.lineTo(0,30);
 	ctx.lineTo(3,27);
 	ctx.lineTo(3,3);
 	ctx.lineTo(27,3);
-	ctx.lineTo(29,1);
+	ctx.lineTo(30,0);
 	ctx.closePath();
-	ctx.fillStyle = "#505050";
+	ctx.fillStyle = "#50505a";
 	ctx.fill();
 	
 	ctx.beginPath();
-	ctx.moveTo(29,1);
+	ctx.moveTo(30,0);
 	ctx.lineTo(27,3);
 	ctx.lineTo(27,27);
 	ctx.lineTo(3,27);
-	ctx.lineTo(1,29);
-	ctx.lineTo(29,29);
+	ctx.lineTo(0,30);
+	ctx.lineTo(30,30);
 	ctx.closePath();
-	ctx.fillStyle = "#202020";
+	ctx.fillStyle = "#20202a";
 	ctx.fill();
 	
 	images["basePlate"] = ctx.getImageData(0,0,30,30);*/
