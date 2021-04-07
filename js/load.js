@@ -33,7 +33,72 @@ function loadImages() {
 	ctx.fill();
 	
 	images["basePlate"] = ctx.getImageData(0,0,30,30);
-	//ctx.clearRect(0,0,300,300);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(1,1);
+	ctx.lineTo(1,29);
+	ctx.lineTo(3,27);
+	ctx.lineTo(3,3);
+	ctx.lineTo(30,3);
+	ctx.lineTo(30,1);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(30,27);
+	ctx.lineTo(3,27);
+	ctx.lineTo(1,29);
+	ctx.lineTo(30,29);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(15,8);
+	ctx.lineTo(22,15);
+	ctx.lineTo(15,22);
+	ctx.lineTo(8,15);
+	ctx.closePath();
+	ctx.fillStyle = "#11dd77";
+	ctx.fill();
+	
+	images["startRight"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(1,1);
+	ctx.lineTo(1,30);
+	ctx.lineTo(3,30);
+	ctx.lineTo(3,3);
+	ctx.lineTo(27,3);
+	ctx.lineTo(29,1);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.lineTo(27,30);
+	ctx.lineTo(29,30);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(15,8);
+	ctx.lineTo(22,15);
+	ctx.lineTo(15,22);
+	ctx.lineTo(8,15);
+	ctx.closePath();
+	ctx.fillStyle = "#11dd77";
+	ctx.fill();
+	
+	images["startDown"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
