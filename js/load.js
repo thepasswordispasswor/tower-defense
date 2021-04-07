@@ -530,7 +530,7 @@ function test() {
 	displayMap();
 }
 
-function openCity(tabName) {
+function openTab(tabName) {
  	let i;
  	let x = document.getElementsByClassName("tab");
  	for (i = 0; i < x.length; i++) {
