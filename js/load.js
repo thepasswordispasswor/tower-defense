@@ -7,36 +7,35 @@ var p = {
 	map: {},
 }
 
-function loadImages(s) {
-	let scale = s;
+function loadImages() {
 	ctx.fillStyle = "#383838";
-	ctx.fillRect(0, 0, 30*scale, 30*scale);
+	ctx.fillRect(0, 0, 30, 30);
 	ctx.beginPath();
-	ctx.moveTo(1*scale,1*scale);
-	ctx.lineTo(1*scale,29*scale);
-	ctx.lineTo(3*scale,27*scale);
-	ctx.lineTo(3*scale,3*scale);
-	ctx.lineTo(27*scale,3*scale);
-	ctx.lineTo(29*scale,1*scale);
+	ctx.moveTo(1,1);
+	ctx.lineTo(1,29);
+	ctx.lineTo(3,27);
+	ctx.lineTo(3,3);
+	ctx.lineTo(27,3);
+	ctx.lineTo(29,1);
 	ctx.closePath();
 	ctx.fillStyle = "#505050";
 	ctx.fill();
 	
 	ctx.beginPath();
-	ctx.moveTo(29*scale,1*scale);
-	ctx.lineTo(27*scale,3*scale);
-	ctx.lineTo(27*scale,27*scale);
-	ctx.lineTo(3*scale,27*scale);
-	ctx.lineTo(1*scale,29*scale);
-	ctx.lineTo(29*scale,29*scale);
+	ctx.moveTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.lineTo(27,27);
+	ctx.lineTo(3,27);
+	ctx.lineTo(1,29);
+	ctx.lineTo(29,29);
 	ctx.closePath();
 	ctx.fillStyle = "#202020";
 	ctx.fill();
 	
-	images["basePlate"] = ctx.getImageData(0,0,30*scale,30*scale);
+	images["basePlate"] = ctx.getImageData(0,0,30,30);
 	//ctx.clearRect(0,0,300,300);
 }
-loadImages(1);
+loadImages();
 
 function loadMap(map) {
 	let temp = Object.assign({}, p.map);
