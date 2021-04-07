@@ -6,22 +6,22 @@
 		<div id="box">
 			<div id="container" style="border-radius: 10px;">
 				<canvas width="270" height="270" id="game"></canvas>
-				<div style="display:inline-block; width:270px; height:270px; transform:translate(0,-166px); background-color:#383842">
-					<div class="bar" style="width:100%; height:30px">
-						<button class="bar-tab" onclick="openTab('towers')" style="width:calc(100%/3);-webkit-appearance: none">Towers</button>
-						<button class="bar-tab" onclick="openTab('upgrades')" style="width:calc(100%/3);-webkit-appearance: none">Upgrades</button>
-						<button class="bar-tab" onclick="openTab('options')" style="width:calc(100%/3);-webkit-appearance: none">Options</button>
+				<div style="display:inline-block; width:270px; height:270px; background-color:#383842">
+					<div style="">
+						<button onclick="openTab('towers')">Towers</button>
+						<button onclick="openTab('upgrades')">Upgrades</button>
+						<button onclick="openTab('options')">Options</button>
 					</div>
 					
-					<div id="towers" class="tab">
+					<div id="towers" style="display:none">
 						<p>Standard, sniper, ice.</p>
 					</div>
 					
-					<div id="upgrades" class="tab" style="display:none">
+					<div id="upgrades" style="display:none">
 						<p>Damage upgrades and such.</p>
 					</div>
 					
-					<div id="options" class="tab" style="display:none">
+					<div id="options" style="display:none">
 						<p>Turn off whatever.</p>
 					</div>
 				</div>
