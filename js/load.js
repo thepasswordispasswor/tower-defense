@@ -416,6 +416,70 @@ function loadImages() {
 	ctx.fill();
 	
 	images["NE"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	
+	ctx.fillStyle = "#404049";
+	ctx.beginPath();
+	ctx.moveTo(30,3);
+	ctx.lineTo(30,1);
+	ctx.lineTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.closePath();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.moveTo(1,0);
+	ctx.lineTo(3,0);
+	ctx.lineTo(3,27);
+	ctx.lineTo(1,29);
+	ctx.closePath();
+	ctx.fill();
+	
+	ctx.fillStyle = "#101019";
+	ctx.beginPath();
+	ctx.moveTo(27,0);
+	ctx.lineTo(29,0);
+	ctx.lineTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.closePath();
+	ctx.fill();
+	ctx.beginPath();
+	ctx.moveTo(30,27);
+	ctx.lineTo(30,29);
+	ctx.lineTo(1,29);
+	ctx.lineTo(3,27);
+	ctx.closePath();
+	ctx.fill();
+	
+	images["SW"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	
+	ctx.fillStyle = "#404049";
+	ctx.beginPath();
+	ctx.moveTo(30,1);
+	ctx.lineTo(30,3);
+	ctx.lineTo(3,3);
+	ctx.lineTo(3,30);
+	ctx.lineTo(1,30);
+	ctx.lineTo(1,1);
+	ctx.closePath();
+	ctx.fill();
+	
+	ctx.fillStyle = "#101019";
+	ctx.beginPath();
+	ctx.moveTo(30,29);
+	ctx.lineTo(30,27);
+	ctx.lineTo(27,27);
+	ctx.lineTo(27,30);
+	ctx.lineTo(29,30);
+	ctx.lineTo(29,29);
+	ctx.closePath();
+	ctx.fill();
+	
+	images["SE"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
@@ -455,4 +519,6 @@ function test() {
 	displayMap();
 	ctx.putImageData(images["NW"], 0, 0);
 	ctx.putImageData(images["NE"], 30, 0);
+	ctx.putImageData(images["SW"], 0, 30);
+	ctx.putImageData(images["SE"], 30, 30);
 }
