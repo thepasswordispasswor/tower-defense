@@ -197,7 +197,7 @@ function loadImages() {
 	ctx.fillStyle = "#dd4444";
 	ctx.fill();
 	
-	images["startRight"] = ctx.getImageData(0,0,30,30);
+	images["endRight"] = ctx.getImageData(0,0,30,30);
 	
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
@@ -230,7 +230,7 @@ function loadImages() {
 	ctx.fillStyle = "#dd4444";
 	ctx.fill();
 	
-	images["startDown"] = ctx.getImageData(0,0,30,30);
+	images["endDown"] = ctx.getImageData(0,0,30,30);
 	
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
@@ -263,7 +263,7 @@ function loadImages() {
 	ctx.fillStyle = "#dd4444";
 	ctx.fill();
 	
-	images["startLeft"] = ctx.getImageData(0,0,30,30);
+	images["endLeft"] = ctx.getImageData(0,0,30,30);
 	
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
@@ -296,7 +296,51 @@ function loadImages() {
 	ctx.fillStyle = "#dd4444";
 	ctx.fill();
 	
-	images["startUp"] = ctx.getImageData(0,0,30,30);
+	images["endUp"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(1,0);
+	ctx.lineTo(3,0);
+	ctx.lineTo(3,30);
+	ctx.lineTo(1,30);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(29,0);
+	ctx.lineTo(27,0);
+	ctx.lineTo(27,30);
+	ctx.lineTo(29,30);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	images["verHall"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(0,1);
+	ctx.lineTo(0,3);
+	ctx.lineTo(30,3);
+	ctx.lineTo(30,1);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(0,29);
+	ctx.lineTo(0,27);
+	ctx.lineTo(30,27);
+	ctx.lineTo(30,29);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	images["horHall"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
@@ -325,6 +369,8 @@ function Map(mapInfo) {
 }
 
 var snakeMap = new Map([
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
+	["startRight", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"endLeft"	],
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
 ]);
 
