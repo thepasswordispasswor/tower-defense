@@ -420,23 +420,23 @@ function loadImages() {
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
 	
-	ctx.fillStyle = "#404049";
+	ctx.fillStyle = "#101019";
 	ctx.beginPath();
-	ctx.moveTo(30,3);
-	ctx.lineTo(30,1);
+	ctx.moveTo(27,30);
+	ctx.lineTo(29,30);
 	ctx.lineTo(29,1);
 	ctx.lineTo(27,3);
 	ctx.closePath();
 	ctx.fill();
 	ctx.beginPath();
-	ctx.moveTo(1,0);
-	ctx.lineTo(3,0);
+	ctx.moveTo(0,29);
+	ctx.lineTo(0,27);
 	ctx.lineTo(3,27);
 	ctx.lineTo(1,29);
 	ctx.closePath();
 	ctx.fill();
 	
-	ctx.fillStyle = "#101019";
+	ctx.fillStyle = "#404049";
 	ctx.beginPath();
 	ctx.moveTo(27,0);
 	ctx.lineTo(29,0);
