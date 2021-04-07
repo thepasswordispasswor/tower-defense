@@ -54,8 +54,8 @@ function displayMap() {
 }
 
 function Map(mapInfo) {
-	this["width"] = mapInfo.length;
-	this["height"] = mapInfo[0].length;
+	this["height"] = mapInfo.length;
+	this["width"] = mapInfo[0].length;
 	for(let i = 0; i < this["height"]; i++) {
 		for(let o = 0; o < this["width"]; o++) {
 			this[i+""+o] = mapInfo[i][o];
