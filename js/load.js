@@ -132,6 +132,39 @@ function loadImages() {
 	ctx.fill();
 	
 	images["startLeft"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(1,0);
+	ctx.lineTo(3,0);
+	ctx.lineTo(3,27);
+	ctx.lineTo(1,29);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(29,0);
+	ctx.lineTo(27,0);
+	ctx.lineTo(27,27);
+	ctx.lineTo(3,27);
+	ctx.lineTo(1,29);
+	ctx.lineTo(29,29);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(15,8);
+	ctx.lineTo(22,15);
+	ctx.lineTo(15,22);
+	ctx.lineTo(8,15);
+	ctx.closePath();
+	ctx.fillStyle = "#11dd77";
+	ctx.fill();
+	
+	images["startUp"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
