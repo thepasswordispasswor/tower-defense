@@ -8,7 +8,7 @@ var p = {
 }
 
 function loadImages() {
-	ctx.fillStyle = "#383838";
+	/*ctx.fillStyle = "#383838";
 	ctx.fillRect(0, 0, 30, 30);
 	ctx.beginPath();
 	ctx.moveTo(1,1);
@@ -32,7 +32,7 @@ function loadImages() {
 	ctx.fillStyle = "#202020";
 	ctx.fill();
 	
-	images["basePlate"] = ctx.getImageData(0,0,30,30);
+	images["basePlate"] = ctx.getImageData(0,0,30,30);*/
 	
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
