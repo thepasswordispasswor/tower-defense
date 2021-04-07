@@ -8,7 +8,7 @@ var p = {
 }
 
 function loadImages() {
-	/*ctx.fillStyle = "#383842";
+	ctx.fillStyle = "#383842";
 	ctx.fillRect(0, 0, 30, 30);
 	ctx.beginPath();
 	ctx.moveTo(0,0);
@@ -32,7 +32,7 @@ function loadImages() {
 	ctx.fillStyle = "#20202a";
 	ctx.fill();
 	
-	images["basePlate"] = ctx.getImageData(0,0,30,30);*/
+	images["basePlate"] = ctx.getImageData(0,0,30,30);
 	
 	ctx.fillStyle = "#282832";
 	ctx.fillRect(0, 0, 30, 30);
@@ -378,4 +378,19 @@ function test() {
 	loadImages();
 	loadMap(snakeMap);
 	displayMap();
+	ctx.putImageData(images["basePlate"],0,0);
+	ctx.putImageData(images["basePlate"],30,0);
+	ctx.putImageData(images["basePlate"],60,0);
+	ctx.putImageData(images["basePlate"],90,0);
+	ctx.putImageData(images["basePlate"],120,0);
+	ctx.putImageData(images["basePlate"],0,30);
+	ctx.putImageData(images["basePlate"],120,30);
+	ctx.putImageData(images["basePlate"],0,60);
+	ctx.putImageData(images["basePlate"],30,60);
+	ctx.putImageData(images["basePlate"],60,60);
+	ctx.putImageData(images["basePlate"],90,60);
+	ctx.putImageData(images["basePlate"],120,60);
+	ctx.putImageData(images["startRight"],30,30);
+	ctx.putImageData(images["horHall"],60,30);
+	ctx.putImageData(images["endLeft"],90,30);
 }
