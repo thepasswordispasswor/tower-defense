@@ -35,7 +35,6 @@ function loadImages() {
 	images["basePlate"] = ctx.getImageData(0,0,30,30);
 	//ctx.clearRect(0,0,300,300);
 }
-loadImages();
 
 function loadMap(map) {
 	let temp = Object.assign({}, p.map);
@@ -66,8 +65,8 @@ var snakeMap = new Map([
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
 ]);
 
-loadMap(snakeMap);
-displayMap();
 function test() {
-	ctx.putImageData(images["basePlate"], 0, 100);
+	loadImages();
+	loadMap(snakeMap);
+	displayMap();
 }
