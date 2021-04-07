@@ -480,6 +480,11 @@ function loadImages() {
 	ctx.fill();
 	
 	images["SE"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	
+	images["void"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
@@ -509,7 +514,13 @@ function Map(mapInfo) {
 
 var snakeMap = new Map([
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
-	["basePlate",	"startRight", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall",  	"endLeft",	"basePlate"	],
+	["basePlate",	"startRight", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall",  	"SW",   	"basePlate"	],
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"verHall", 	"basePlate"	],
+	["basePlate",	"SE",   	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall",  	"NW",   	"basePlate"	],
+	["basePlate", 	"verHall", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
+	["basePlate",	"NE",   	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall",  	"SW",   	"basePlate"	],
+	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"verHall", 	"basePlate"	],
+	["basePlate",	"endRight",   	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"horHall",  	"NW",   	"basePlate"	],
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
 ]);
 
@@ -517,8 +528,4 @@ function test() {
 	loadImages();
 	loadMap(snakeMap);
 	displayMap();
-	ctx.putImageData(images["NW"], 0, 0);
-	ctx.putImageData(images["NE"], 30, 0);
-	ctx.putImageData(images["SW"], 0, 30);
-	ctx.putImageData(images["SE"], 30, 30);
 }
