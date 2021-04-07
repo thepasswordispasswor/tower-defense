@@ -1,14 +1,18 @@
 
 #box {
 	width: 98vw;
-    height: 96vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	height: 96vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #container {
 	background-color: #000000;
-    height: 270px;
-    padding: 10px;
+	height: 270px;
+	padding: 10px;
+}
+
+#game {
+	margin-right: 10px;
 }
