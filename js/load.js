@@ -99,6 +99,39 @@ function loadImages() {
 	ctx.fill();
 	
 	images["startDown"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(0,1);
+	ctx.lineTo(0,3);
+	ctx.lineTo(27,3);
+	ctx.lineTo(29,1);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.lineTo(27,27);
+	ctx.lineTo(0,27);
+	ctx.lineTo(0,29);
+	ctx.lineTo(29,29);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(15,8);
+	ctx.lineTo(22,15);
+	ctx.lineTo(15,22);
+	ctx.lineTo(8,15);
+	ctx.closePath();
+	ctx.fillStyle = "#11dd77";
+	ctx.fill();
+	
+	images["startLeft"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
