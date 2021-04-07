@@ -353,7 +353,7 @@ function displayMap() {
 	let m = p.map;
 	for(let i = 0; i < m["height"]; i++) {
 		for(let o = 0; o < m["width"]; o++) {
-			if(m[i+""+o] === "basePlate") ctx.putImageData(images[m[i+""+o]], o*30, i*30);
+			ctx.putImageData(images[m[i+""+o]], o*30, i*30);
 		}
 	}
 }
@@ -378,19 +378,4 @@ function test() {
 	loadImages();
 	loadMap(snakeMap);
 	displayMap();
-	ctx.putImageData(images["basePlate"],0,0);
-	ctx.putImageData(images["basePlate"],30,0);
-	ctx.putImageData(images["basePlate"],60,0);
-	ctx.putImageData(images["basePlate"],90,0);
-	ctx.putImageData(images["basePlate"],120,0);
-	ctx.putImageData(images["basePlate"],0,30);
-	ctx.putImageData(images["basePlate"],120,30);
-	ctx.putImageData(images["basePlate"],0,60);
-	ctx.putImageData(images["basePlate"],30,60);
-	ctx.putImageData(images["basePlate"],60,60);
-	ctx.putImageData(images["basePlate"],90,60);
-	ctx.putImageData(images["basePlate"],120,60);
-	ctx.putImageData(images["startRight"],30,30);
-	ctx.putImageData(images["horHall"],60,30);
-	ctx.putImageData(images["endLeft"],90,30);
 }
