@@ -370,7 +370,7 @@ function Map(mapInfo) {
 
 var snakeMap = new Map([
 	["basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
-	["startRight", 	"horHall", 	"horHall", 	"basePlate", 	"horHall", 	"horHall", 	"horHall", 	"horHall", 	"endLeft"	],
+	["basePlate",	"startRight", 	"horHall", 	"basePlate", 	"horHall", 	"horHall", 	"horHall",  	"endLeft",	"basePlate"	],
 	["basePlate", 	"basePlate", 	"basePlate", 	"horHall", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate", 	"basePlate"	],
 ]);
 
