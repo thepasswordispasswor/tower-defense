@@ -13,9 +13,9 @@ function loadImages() {
 	ctx.beginPath();
 	ctx.moveTo(0,0);
 	ctx.lineTo(0,30);
-	ctx.lineTo(3,27);
-	ctx.lineTo(3,3);
-	ctx.lineTo(27,3);
+	ctx.lineTo(2,28);
+	ctx.lineTo(2,2);
+	ctx.lineTo(28,2);
 	ctx.lineTo(30,0);
 	ctx.closePath();
 	ctx.fillStyle = "#50505a";
@@ -23,9 +23,9 @@ function loadImages() {
 	
 	ctx.beginPath();
 	ctx.moveTo(30,0);
-	ctx.lineTo(27,3);
-	ctx.lineTo(27,27);
-	ctx.lineTo(3,27);
+	ctx.lineTo(28,2);
+	ctx.lineTo(28,28);
+	ctx.lineTo(2,28);
 	ctx.lineTo(0,30);
 	ctx.lineTo(30,30);
 	ctx.closePath();
@@ -341,6 +341,55 @@ function loadImages() {
 	ctx.fill();
 	
 	images["horHall"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	ctx.beginPath();
+	ctx.moveTo(0,1);
+	ctx.lineTo(0,3);
+	ctx.lineTo(3,3);
+	ctx.lineTo(3,0);
+	ctx.lineTo(1,0);
+	ctx.lineTo(1,1);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(0,29);
+	ctx.lineTo(0,27);
+	ctx.lineTo(27,27);
+	ctx.lineTo(27,0);
+	ctx.lineTo(29,0);
+	ctx.lineTo(29,29);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	images["NW"] = ctx.getImageData(0,0,30,30);
+	
+	ctx.fillStyle = "#282832";
+	ctx.fillRect(0, 0, 30, 30);
+	
+	ctx.beginPath();
+	ctx.moveTo(27,0);
+	ctx.lineTo(29,0);
+	ctx.lineTo(29,1);
+	ctx.lineTo(27,27);
+	ctx.closePath();
+	ctx.fillStyle = "#404049";
+	ctx.fill();
+	
+	ctx.beginPath();
+	ctx.moveTo(30,3);
+	ctx.lineTo(30,1);
+	ctx.lineTo(29,1);
+	ctx.lineTo(27,3);
+	ctx.closePath();
+	ctx.fillStyle = "#101019";
+	ctx.fill();
+	
+	images["NE"] = ctx.getImageData(0,0,30,30);
 }
 
 function loadMap(map) {
