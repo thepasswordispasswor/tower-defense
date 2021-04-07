@@ -427,4 +427,6 @@ function test() {
 	loadImages();
 	loadMap(snakeMap);
 	displayMap();
+	ctx.putImageData(images["NW"], 0, 0);
+	ctx.putImageData(images["NE"], 30, 0);
 }
