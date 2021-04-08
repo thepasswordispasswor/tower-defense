@@ -9,9 +9,20 @@
 
 #container {
 	background-color: #282832;
-	height: 270px;
-	padding: 10px;
+	height: 290px;
+	width: 570px;
+	border-radius: 10px;
 }
 
 #game {
+	position: absolute;
+	width: 270px;
+	height: 270px;
+}
+
+#menu {
+	position: absolute;
+	width: 270px;
+	height: 270px;
+	background-color: #383842
 }
