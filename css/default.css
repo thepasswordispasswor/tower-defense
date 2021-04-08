@@ -33,10 +33,10 @@
 	-webkit-appearance: none;
 	width: 90px;
 	height: 30px;
-	border-top: 3px solid #50505a;
-	border-left: 3px solid #50505a;
-	border-bottom: 3px solid #20202a;
-	border-right: 3px solid #20202a;
+	border-top: 2px solid #50505a;
+	border-left: 2px solid #50505a;
+	border-bottom: 2px solid #20202a;
+	border-right: 2px solid #20202a;
 	background-color: #383842;
 	margin-right: -4px;
 }
