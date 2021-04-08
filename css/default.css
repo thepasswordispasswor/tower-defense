@@ -18,11 +18,13 @@
 	position: absolute;
 	width: 270px;
 	height: 270px;
+	transform: translate(10px, 10px);
 }
 
 #menu {
 	position: absolute;
 	width: 270px;
 	height: 270px;
-	background-color: #383842
+	background-color: #383842;
+	transform: translate(290px, 10px);
 }
