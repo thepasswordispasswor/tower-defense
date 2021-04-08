@@ -28,3 +28,9 @@
 	background-color: #383842;
 	transform: translate(290px, 10px);
 }
+
+.tab-button {
+	-webkit-appearance: none;
+	width: 90px;
+	height: 30px;
+}
