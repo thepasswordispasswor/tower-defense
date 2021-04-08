@@ -4,24 +4,24 @@
 	</head>
 	<body onload="test()">
 		<div id="box">
-			<div id="container" style="border-radius: 10px;">
-				<canvas width="270" height="270" id="game"></canvas>
-				<div style="display:inline-block; width:270px; height:270px; background-color:#383842">
-					<div style="">
+			<div id="container">
+				<canvas id="game" width="270" height="270"></canvas>
+				<div id="menu">
+					<div class="tab-button">
 						<button onclick="openTab('towers')">Towers</button>
 						<button onclick="openTab('upgrades')">Upgrades</button>
 						<button onclick="openTab('options')">Options</button>
 					</div>
 					
-					<div id="towers" style="display:none">
+					<div class="tab" id="towers" style="display:none">
 						<p>Standard, sniper, ice.</p>
 					</div>
 					
-					<div id="upgrades" style="display:none">
+					<div class="tab" id="upgrades" style="display:none">
 						<p>Damage upgrades and such.</p>
 					</div>
 					
-					<div id="options" style="display:none">
+					<div class="tab" id="options" style="display:none">
 						<p>Turn off whatever.</p>
 					</div>
 				</div>
